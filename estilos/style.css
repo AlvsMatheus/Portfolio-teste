@@ -12,12 +12,16 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    
 }
+
+body{
+   
+    background-color: aliceblue;
+}
 #headdad{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    background-color:#A7C7E7;
 }
 
 .navchild{
@@ -26,23 +30,32 @@
 }
 
 header > div > h1{
-    color: rgb(1, 88, 114);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: rgb(50, 85, 121);
+    font-size: 2em;
+
+    
 }
 
 nav > a{
     padding: 5px;
-    color: lightslategray;
+    color: rgb(50, 85, 121);
     text-decoration: none
 
+}
+
+nav > a:hover{
+    color: #5f8fbe;
 }
 
 #photof{
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: center;
-    
-    background-color: rgb(255, 255, 255);
+    align-items: center;   
+    background-color: aliceblue;
     height: 300px;
 
 }
@@ -62,8 +75,10 @@ nav > a{
     align-items:center ;
     width: 100%;
     height: 400px;
-    background-color: aliceblue;
-    box-shadow: 0px 0px 10px rgb(229, 237, 245);
+    margin: 40px 0px;
+    color: azure;
+    background-color: #1c2833;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.726);
 
 }
 
@@ -77,50 +92,92 @@ nav > a{
 }
 
 
+
 h1{
     text-align: center;
     text-decoration: underline;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+h1#ola{
+    text-decoration: none;
+    margin-top: 30px
+}
+
+#projetos{
+    padding-bottom: 30px;
+
 }
 
 #containerproj{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    background-color: cadetblue;
+    gap: 30px;
     width: 100%;
     height: 500px;
-    overflow-x: auto;
-    overflow-y: hidden ;
-    white-space: nowrap;
+    
 }
 
 .childproj{
-    background-color:beige;
-    width: 100px;
-    height: 100px;
-    border: 1px solid salmon;
-
+    width: 160px;
+    height: 180px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: white;
 
 }
 
-footer{
-    background-color: gray;
-    width: 100%;
-    height: 40px;
-}
 
 #simbolf{
     display: flex;
     width: 100%;
     height: 400px;
-    background-color: aliceblue;
-    box-shadow: 0px 0px 10px rgb(229, 237, 245);
+    background-color: #1c2833;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.726);
     margin: 50px 0px;
 
 }
 
 #simbolc{
 
+}
+
+#contactf{
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-color: #1c2833;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.726);
+}
+
+#contactc{
+
+}
+
+#contactf > h1{
+    color: white;
+    
+}
+
+footer{
+    display: flex;
+    flex-flow:row nowrap ;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(177, 177, 177);
+    width: 100%;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    font-size: 0.8em;
+    box-shadow:1px 1px 10px rgba(0, 0, 0, 0.342);
+}
+
+i{
+    vertical-align: middle;
 }

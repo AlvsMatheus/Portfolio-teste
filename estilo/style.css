@@ -71,7 +71,7 @@ section#greetments-container{
     align-items: center;
     justify-content:center;
     height: 100vh;
-    margin-top: 40px;
+    margin: 60px 0px;
 }
 
 div#img-container{
@@ -80,7 +80,7 @@ div#img-container{
     background-color: transparent;
     width: 350px;
     height: 400px;
-    margin: 20px 0px;
+    
     
 }
 

@@ -15,6 +15,9 @@ body{
     background-color: rgb(0, 11, 70);
     height: 6rem;
     width: 100%;
+    position: sticky;
+    top: 0;
+    transition: top 0.3s ease-in-out;
 }
 
 #header-container #matheus{
@@ -172,6 +175,7 @@ section#projects-container {
     align-items: center;
     height: 90vh;
     width: 100%;
+    
 }
 
 section#projects-container #project-title{
@@ -202,39 +206,74 @@ section#projects-container #project-title{
   }
   
   /* Estilizando a barra de rolagem para Chrome, Edge e Safari */
-  #projects::-webkit-scrollbar {
+#projects::-webkit-scrollbar {
     height: 8px;
   }
   
-  #projects::-webkit-scrollbar-track {
+#projects::-webkit-scrollbar-track {
     border-radius: 10px;
   }
   
-  #projects::-webkit-scrollbar-thumb {
+#projects::-webkit-scrollbar-thumb {
     background: white;
     border-radius: 10px;
     border: 2px solid #4682B4;
   }
   
-  #projects::-webkit-scrollbar-thumb:hover {
+#projects::-webkit-scrollbar-thumb:hover {
     background: #08b9ff;
   }
   
   /* Define o tamanho das imagens */
-  #projects a {
+#projects a {
     flex: 0 0 45%; /* Cada imagem ocupa 45% da largura da tela */
     scroll-snap-align: center; /* Faz a rolagem parar na posição certa */
   }
   
-  #projects img {
+#projects img {
     width: 100%;
     height: auto;
     border-radius: 10px;
   }
-  
-  
+
+#projects .img{
+    height: 200px;
+    background-color: transparent;
+
+  }
+
+#project-name{
+    padding-top: 5px;
+    text-align: center;
+}
+
+section#contact-container{
+    height: 70vh;
+    background-color: #1d1c1c80;
+}
+
+#contact-container div{
+    height: 160px;
+
+}
+
+#contact-container div #contactme{
+    font-size: 60px;
+    text-align: center;
+    
+}
 
 footer{
+    margin: 20px 0px;
+    height: 200px;
+    width: 100%;
     background-color: transparent;
+}
+
+div#copy{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 

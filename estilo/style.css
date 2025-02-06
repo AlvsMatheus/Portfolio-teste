@@ -14,7 +14,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 5px 5px;
-    background-color: #091824;
+    background-color: rgb(0, 11, 70);
     height: 6rem;
     width: 100%;
 }
@@ -138,18 +138,9 @@ section#skills-container{
 #skills-title{
     color: white;
     font-size: 6rem;
-    font-family: poppins;
+    font-family:Poppins, Arial, Helvetica, sans-serif;
     font-weight: 100;
     text-shadow: 5px 5px 10px rgba(51, 214, 255, 0.616); /*rgba(255, 255, 255, 0.418)*/
-    /*display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #0000006b;
-    border: 1px solid rgba(51, 214, 255, 0.555);
-    box-shadow: 0px 0px 10px 10px rgba(51, 214, 255, 0.274);
-    border-radius: 20px;
-    height:100px;
-    width:300px;*/
 }
 
 .logo-skills{
@@ -176,6 +167,74 @@ section#skills-container{
     box-shadow: 7px 5px 7px rgba(8, 31, 241, 0.596);
 }
 
+section#projects-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+}
+
+section#projects-container #project-title{
+    width: 100%;
+    height: 200px;
+}
+
+#project-title p {
+    text-align: center;
+    color: white;
+    font-size: 6rem;
+    font-family:Poppins, Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    text-shadow: 5px 5px 10px rgba(51, 214, 255, 0.616);
+    
+}
+
+#projects {
+    display: flex;
+    overflow-x: auto; /* Ativa a rolagem apenas na horizontal */
+    white-space: nowrap; /* Mantém os itens em linha */
+    gap: 20px; /* faz o espaço entre as imagens */
+    padding: 0px 0px 30px 0px;
+    max-width: 80vw; /* Limita a largura para caber 2 imagens grandes */
+    scroll-snap-type: x mandatory; /* Faz a rolagem "grudar" nos itens */
+    scrollbar-width: thin;
+    scrollbar-color: white transparent;
+  }
+  
+  /* Estilizando a barra de rolagem para Chrome, Edge e Safari */
+  #projects::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  #projects::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  
+  #projects::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+    border: 2px solid #4682B4;
+  }
+  
+  #projects::-webkit-scrollbar-thumb:hover {
+    background: #08b9ff;
+  }
+  
+  /* Define o tamanho das imagens */
+  #projects a {
+    flex: 0 0 45%; /* Cada imagem ocupa 45% da largura da tela */
+    scroll-snap-align: center; /* Faz a rolagem parar na posição certa */
+  }
+  
+  #projects img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  
 
 footer{
     background-color: transparent;

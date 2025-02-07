@@ -149,7 +149,7 @@ section#skills-container{
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
-    height: 600px;
+    height: 900px;
     width: 100%;
     background-image: linear-gradient(to bottom, black, black, black, rgba(9, 9, 70, 0.555));
     border-top: 1px solid rgba(51, 214, 255, 0.555);
@@ -163,6 +163,7 @@ section#skills-container{
     height: 100%;
     width: 400px;
     background-color: transparent;
+    
 }
 
 #skills-title{
@@ -174,6 +175,7 @@ section#skills-container{
 }
 
 .logo-skills{
+    padding-bottom: 100px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;

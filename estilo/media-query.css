@@ -1,6 +1,18 @@
 @charset "UTF-8";
 
-@media screen and (min-width:768px) and (max-width:1024px) {
+@media screen and (min-width:562px) {
+
+  #projects a {
+    flex: 0 0 200px;
+    /*flex: 0 0 35%;  Cada imagem ocupa 45% da largura da tela */
+    scroll-snap-align: center; /* Faz a rolagem parar na posição certa */
+  }
+
+}
+  
+
+
+@media screen and (min-width:768px) and (max-width:1199px) {
 
     article#about{
         display: flex;
@@ -12,6 +24,8 @@
         height: 50vh;
     
     }
+
+
     
     div#about-title{
         display: flex;
@@ -32,15 +46,6 @@
         font-weight: 200;
         text-align: center;
     }
-    div#project-back{
-        background-image: url(../imagens/flower-cell.jpg);
-        background-attachment: fixed;
-        background-size: cover;
-        background-position:center bottom;
-        box-shadow: inset 1px 1px 0px black;
-        margin-bottom: 150px;
-        box-shadow: 0px 20px 50px 5px rgba(1, 9, 70, 0.644);
-    }
 
     div#project-back{
         background-image: url(../imagens/blue-background-pc.jpg);
@@ -54,19 +59,26 @@
     
 
     #projects {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow-x: auto; /* Ativa a rolagem apenas na horizontal */
-        white-space: nowrap; /* Mantém os itens em linha */
-        gap: 10px; /* faz o espaço entre as imagens */
-        padding: 0px 0px 30px 0px;
-        max-width: 70vw; /* Limita a largura para caber 2 imagens grandes */
-        scroll-snap-type: x mandatory; /* Faz a rolagem "grudar" nos itens */
-        scrollbar-width: thin;
-        scrollbar-color: blue;
-        transition: 1s ease;
-      }
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Certifica-se de que os itens aparecem corretamente */
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 5px;
+    padding: 0px 0px 40px 0px;
+    width: 100%; /* Faz o container ocupar toda a largura */
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: blue;
+}
+
+#projects a {
+    flex: 0 0 auto; /* Faz com que os itens respeitem o tamanho do conteúdo */
+    min-width: 150px; /* Evita que fiquem pequenos demais */
+    max-width: 300px; /* Define um limite para evitar imagens gigantes */
+    scroll-snap-align: center;
+}
+
       
       /* Estilizando a barra de rolagem para Chrome, Edge e Safari */
     #projects::-webkit-scrollbar {
@@ -88,23 +100,24 @@
       }
       
       /* Define o tamanho das imagens */
-    #projects a {
-        flex: 0 0 300px;
-        /*flex: 0 0 35%;  Cada imagem ocupa 45% da largura da tela */
-        scroll-snap-align: center; /* Faz a rolagem parar na posição certa */
-      }
+  
       
     #projects img {
-        width: 200px;
+        width: 100px;
         height: auto;
         border-radius: 10px;
       }
     
     #projects .img{
-        height: 200px;
+        height: 100px;
         background-color: transparent;
     
       }
+
+      
+    #projects p {
+      display: none;
+  }
 
     
 }
@@ -227,7 +240,7 @@
     #projects {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         overflow-x: auto; /* Ativa a rolagem apenas na horizontal */
         white-space: nowrap; /* Mantém os itens em linha */
         gap: 10px; /* faz o espaço entre as imagens */
@@ -260,7 +273,8 @@
       
       /* Define o tamanho das imagens */
     #projects a {
-        flex: 0 0 300px;
+  
+        flex: 0 0 25%;
         /*flex: 0 0 35%;  Cada imagem ocupa 45% da largura da tela */
         scroll-snap-align: center; /* Faz a rolagem parar na posição certa */
       }

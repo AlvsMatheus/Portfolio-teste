@@ -6,6 +6,13 @@ body{
     scroll-behavior: smooth;   
 }
 
+div#background{
+    background-image: url(../imagens/flower-cell.jpg);
+    background-size: cover;
+    background-position:center bottom;
+    
+}
+
 #header-container{
     display: flex;
     flex-flow: row nowrap;
@@ -13,6 +20,7 @@ body{
     justify-content: space-between;
     padding: 5px 5px;
     background-color: rgb(0, 11, 70);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.568);
     height: 6rem;
     width: 100%;
     position: sticky;
@@ -39,11 +47,11 @@ article#about{
     margin-top: 80px;
     width: 100%;
     height: 50vh;
-    background-image: url(../imagens/blue-background-cell.jpg);
+    /*background-image: url(../imagens/blue-background-cell.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
-    box-shadow: 0px 0px 10px 10px rgba(3, 91, 192, 0.274);
+    box-shadow: 0px 0px 10px 10px rgba(3, 91, 192, 0.274);*/
 
 }
 
@@ -122,7 +130,7 @@ section#skills-container{
     justify-content: center;
     height: 600px;
     width: 100%;
-    background-color: #080808;
+    background-image: linear-gradient(to bottom, black, black, black, rgba(9, 9, 70, 0.555));
     border-top: 1px solid rgba(51, 214, 255, 0.555);
 }
 
@@ -168,6 +176,13 @@ section#skills-container{
     box-shadow: 7px 5px 7px rgba(8, 31, 241, 0.596);
 }
 
+div#project-back{
+    background-image: url(../imagens/flower-cell.jpg);
+    background-size: cover;
+    background-position:center bottom;
+    box-shadow: inset 1px 1px 0px black;
+}
+
 section#projects-container {
     display: flex;
     flex-flow: column nowrap;
@@ -185,11 +200,11 @@ section#projects-container #project-title{
 
 #project-title p {
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 6rem;
     font-family:Poppins, Arial, Helvetica, sans-serif;
     font-weight: 100;
-    text-shadow: 5px 5px 10px rgba(51, 214, 255, 0.616);
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.822);
     
 }
 
@@ -248,8 +263,11 @@ section#projects-container #project-title{
 }
 
 section#contact-container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
     height: 70vh;
-    background-color: #1d1c1c80;
 }
 
 #contact-container div{
@@ -263,11 +281,33 @@ section#contact-container{
     
 }
 
+div#logo-contatos{
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: start;
+    justify-content: space-evenly;
+    width: 400px;
+    height: 500px;
+}
+
+#logo-contatos .logo{
+    display: flex;
+    align-items: center;
+    flex-flow:row nowrap;
+    height: 90px;
+    width: 80px;
+}
+
+.logo a {
+    padding-left: 10px;
+    white-space: nowrap;
+}
+
 footer{
     margin: 20px 0px;
     height: 200px;
     width: 100%;
-    background-color: transparent;
+    background-image:linear-gradient(to bottom, black,rgb(0, 0, 92), transparent)
 }
 
 div#copy{

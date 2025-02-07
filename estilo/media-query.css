@@ -1,0 +1,285 @@
+@charset "UTF-8";
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+    article#about{
+        display: flex;
+        align-items: center;
+        flex-flow: column nowrap;
+        justify-content: center;
+        margin-top: 80px;
+        width: 100%;
+        height: 50vh;
+    
+    }
+    
+    div#about-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0000006b;
+        border: 1px solid rgba(51, 214, 255, 0.555);
+        box-shadow: 0px 0px 10px 10px rgba(51, 214, 255, 0.274);
+        border-radius: 20px;
+        margin-bottom: 250px;
+        height:200px;
+        width:600px;
+    }
+    
+    div#about-title p{
+        font-size: 3rem;
+        font-family: poppins, sans-serif;
+        font-weight: 200;
+        text-align: center;
+    }
+    div#project-back{
+        background-image: url(../imagens/flower-cell.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position:center bottom;
+        box-shadow: inset 1px 1px 0px black;
+        margin-bottom: 150px;
+        box-shadow: 0px 20px 50px 5px rgba(1, 9, 70, 0.644);
+    }
+
+    div#project-back{
+        background-image: url(../imagens/blue-background-pc.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position:center bottom;
+        box-shadow: inset 1px 1px 0px black;
+        margin-bottom: 150px;
+        box-shadow: 0px 20px 50px 5px rgba(1, 9, 70, 0.644);
+    }
+    
+
+    #projects {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-x: auto; /* Ativa a rolagem apenas na horizontal */
+        white-space: nowrap; /* Mantém os itens em linha */
+        gap: 10px; /* faz o espaço entre as imagens */
+        padding: 0px 0px 30px 0px;
+        max-width: 70vw; /* Limita a largura para caber 2 imagens grandes */
+        scroll-snap-type: x mandatory; /* Faz a rolagem "grudar" nos itens */
+        scrollbar-width: thin;
+        scrollbar-color: blue;
+        transition: 1s ease;
+      }
+      
+      /* Estilizando a barra de rolagem para Chrome, Edge e Safari */
+    #projects::-webkit-scrollbar {
+        height: 8px;
+      }
+      
+    #projects::-webkit-scrollbar-track {
+        border-radius: 10px;
+      }
+      
+    #projects::-webkit-scrollbar-thumb {
+        background: white;
+        border-radius: 10px;
+        border: 2px solid #4682B4;
+      }
+      
+    #projects::-webkit-scrollbar-thumb:hover {
+        background: #08b9ff;
+      }
+      
+      /* Define o tamanho das imagens */
+    #projects a {
+        flex: 0 0 300px;
+        /*flex: 0 0 35%;  Cada imagem ocupa 45% da largura da tela */
+        scroll-snap-align: center; /* Faz a rolagem parar na posição certa */
+      }
+      
+    #projects img {
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+      }
+    
+    #projects .img{
+        height: 200px;
+        background-color: transparent;
+    
+      }
+
+    
+}
+
+@media screen and (min-width:1200px) {
+    article#about{
+        display: flex;
+        align-items: center;
+        flex-flow: column nowrap;
+        justify-content: center;
+        margin-top: 80px;
+        width: 100%;
+        height: 50vh;
+    
+    }
+    
+    div#about-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0000006b;
+        border: 1px solid rgba(51, 214, 255, 0.555);
+        box-shadow: 0px 0px 10px 10px rgba(51, 214, 255, 0.274);
+        border-radius: 20px;
+        margin-bottom: 250px;
+        height:200px;
+        width:600px;
+    }
+    
+    div#about-title p{
+        font-size: 3rem;
+        font-family: poppins, sans-serif;
+        font-weight: 200;
+        text-align: center;
+    }
+    
+    section#greetments-container{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content:center;
+        height: 100vh;
+        margin: 60px 0px;
+    }
+    
+    div#img-container{
+        display: flex;
+        justify-content: center;
+        background-color: transparent;
+        width: 350px;
+        height: 400px;
+        margin: 20px 0px;
+        transition: 1s ease;
+        
+    }
+    
+    div#img-container img{
+        width: 300px;
+        height: 300px;
+        margin-bottom: 140px;
+        transition: 1s ease;
+    }
+    
+    div#img-container img:hover{
+        transform: translateY(-10px);
+        transition: 1s ease;
+    
+    }
+    
+    div#greetmentes-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        border: 1px solid rgba(51, 214, 255, 0.555);
+        box-shadow: 0px 0px 10px 10px rgba(3, 91, 192, 0.274);
+        width: 500px;
+        border-radius: 8px;
+        margin-bottom: 200px;
+    }
+    
+    
+    div#greetmentes-item p{
+        font-size: 1.5rem;
+        font-family: poppins;
+        font-weight: 100;
+        text-align: center;
+        border-radius: 8px;
+        max-width: 40ch;
+        white-space: normal;
+        text-align: center;
+        padding: 10px;
+    }
+
+    section#skills-container{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        height: 900px;
+        width: 100%;
+        background-image: linear-gradient(to bottom, black, black, black, rgba(9, 9, 70, 0.555));
+        border-top: 1px solid rgba(51, 214, 255, 0.555);
+        
+
+
+    }
+
+    div#project-back{
+        background-image: url(../imagens/blue-background-pc.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position:center bottom;
+        box-shadow: inset 1px 1px 0px black;
+        margin-bottom: 150px;
+        box-shadow: 0px 20px 50px 5px rgba(1, 9, 70, 0.644);
+    }
+    
+
+    #projects {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-x: auto; /* Ativa a rolagem apenas na horizontal */
+        white-space: nowrap; /* Mantém os itens em linha */
+        gap: 10px; /* faz o espaço entre as imagens */
+        padding: 0px 0px 30px 0px;
+        max-width: 70vw; /* Limita a largura para caber 2 imagens grandes */
+        scroll-snap-type: x mandatory; /* Faz a rolagem "grudar" nos itens */
+        scrollbar-width: thin;
+        scrollbar-color: blue;
+        transition: 1s ease;
+      }
+      
+      /* Estilizando a barra de rolagem para Chrome, Edge e Safari */
+    #projects::-webkit-scrollbar {
+        height: 8px;
+      }
+      
+    #projects::-webkit-scrollbar-track {
+        border-radius: 10px;
+      }
+      
+    #projects::-webkit-scrollbar-thumb {
+        background: white;
+        border-radius: 10px;
+        border: 2px solid #4682B4;
+      }
+      
+    #projects::-webkit-scrollbar-thumb:hover {
+        background: #08b9ff;
+      }
+      
+      /* Define o tamanho das imagens */
+    #projects a {
+        flex: 0 0 300px;
+        /*flex: 0 0 35%;  Cada imagem ocupa 45% da largura da tela */
+        scroll-snap-align: center; /* Faz a rolagem parar na posição certa */
+      }
+      
+    #projects img {
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+      }
+    
+    #projects .img{
+        height: 200px;
+        background-color: transparent;
+    
+      }
+
+    #projects p {
+        display: none;
+    }
+}
+    
+

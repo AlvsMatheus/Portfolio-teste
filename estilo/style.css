@@ -299,6 +299,7 @@ section#contact-container{
 #contact-container div #contactme{
     font-size: 60px;
     text-align: center;
+    margin-bottom: 60px;
     
 }
 
@@ -309,7 +310,8 @@ div#logo-contatos{
     justify-content: space-evenly;
     width: 400px;
     height: 500px;
-    background-color: rgba(37, 37, 37, 0.11);
+    background-image: linear-gradient(to bottom,rgba(26, 0, 73, 0.356),rgba(17, 0, 49, 0.26), black );
+    /*background-color: rgba(26, 0, 73, 0.205);*/
     border-radius: 10px;
 }
 #logo-contatos a  {
@@ -370,10 +372,10 @@ footer{
 }
 
 div#copy{
-    background-image:linear-gradient(to bottom, black,rgb(0, 0, 92), transparent);
+    background-image:linear-gradient(to bottom, black,rgba(0, 0, 92, 0.568), transparent);
     background-attachment: fixed center center;
     background-position: center center;
-    margin: 40px 0px;
+    margin: 150px 0px;
     height: 400px;
     display: flex;
     align-items: center;

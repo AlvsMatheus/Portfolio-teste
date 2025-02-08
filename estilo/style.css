@@ -278,12 +278,6 @@ section#projects-container #project-title{
     border-radius: 10px;
   }
 
-#projects .img{
-    height: 200px;
-    background-color: transparent;
-
-  }
-
 #project-name{
     padding-top: 5px;
     text-align: center;
